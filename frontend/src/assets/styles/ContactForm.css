@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    height: 34.5rem;
+    box-shadow: 9px 9px 9px #000;
+    margin: 45px 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 65px;
+    padding: 20px 65px;
+    word-break: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+label {
+    margin: 12px 0px;
+    padding: 5px 0px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+
+textarea {
+    width: 100%;
+    height: 8rem;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+button:hover {
+    transition: 0.6s;
+    background-color: #333;
+}
+
+@media screen and (max-width: 1100px){
+    .form-container {
+        margin: 80px 20px;
+        width: 90%;
+        height: 27rem;
+    }
+
+    .form {
+        margin: 10px 30px;
+        padding: 10px 30px;
+        height: 20rem;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 10px 0px;
+        padding: 20px 0px;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .form-container {
+        margin: 80px 20px;
+        width: 90%;
+        height: 27rem;
+    }
+
+    .form {
+        margin: 10px 30px;
+        padding: 10px 30px;
+        height: 20rem;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 10px 0px;
+        padding: 20px 0px;
+    }
+
+    button {
+        width: 50%;
+    }
+}
